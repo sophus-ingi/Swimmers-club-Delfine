@@ -12,7 +12,11 @@ public class SwimmingClubProgram {
 
         while (stillGoing) {
             //creating  members
-            System.out.println("*** Add a new Member ***");
+            System.out.println("""
+                    ************************
+                    *** Add a new Member ***
+                    ************************
+                    """);
 
             System.out.println("What is the member's name?");
             String name = scanner.next();
