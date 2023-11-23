@@ -6,6 +6,7 @@ class ClubMember {
     private int phoneNumber;
     private String email;
     private String address;
+    private String gender;
 
     public ClubMember(String name, int age, String membershipType, int cprNumber, int phoneNumber, String email, String address) {
         this.name = name;
@@ -15,6 +16,8 @@ class ClubMember {
         this.phoneNumber = phoneNumber;
         this.address = address;
         this.email = email;
+        this.gender = gender;
+
     }
 
     public String getName() {
@@ -44,6 +47,10 @@ class ClubMember {
         return address;
     }
 
+    public String getGender(){
+        return gender;
+    }
+
     //TODO add additional methods for member-related functionalities can be added here
 
 
@@ -57,7 +64,8 @@ class ClubMember {
                 ", Cpr Number: " + cprNumber +
                 ", Phone Number: " + phoneNumber +
                 ", Email: " + email +
-                ", Address: " + address + "]";
+                ", Address: " + address +
+                ", Gender: " + gender + "]";
     }
 }
 
