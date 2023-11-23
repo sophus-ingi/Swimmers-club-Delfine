@@ -5,15 +5,15 @@ class ClubMember {
     private int cprNumber;
     private int phoneNumber;
     private String email;
-    private String adress;
+    private String address;
 
-    public ClubMember(String name, int age, String membershipType, int cprNumber, int phoneNumber, String email, String adress) {
+    public ClubMember(String name, int age, String membershipType, int cprNumber, int phoneNumber, String email, String address) {
         this.name = name;
         this.age = age;
         this.membershipType = membershipType;
         this.cprNumber = cprNumber;
         this.phoneNumber = phoneNumber;
-        this.adress = adress;
+        this.address = address;
         this.email = email;
     }
 
@@ -40,10 +40,25 @@ class ClubMember {
         return email;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
     //TODO add additional methods for member-related functionalities can be added here
 
+
+
+ @Override
+    public String toString() {
+        return "domain.Superhero [" +
+                "Name: " + name +
+                ", Age: " + age +
+                ", Membership: " + membershipType +
+                ", Cpr Number: " + cprNumber +
+                ", Phone Number: " + phoneNumber +
+                ", Email: " + email +
+                ", Address: " + address + "]";
+    }
 }
+
+
